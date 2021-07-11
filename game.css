@@ -1,0 +1,101 @@
+body {
+  font-family: "Hanalei Fill", cursive;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: linear-gradient(
+    55deg,
+    rgb(35, 100, 72) 0%,
+    rgb(35, 100, 72) 35%,
+    rgb(13, 6, 48) 50%,
+    rgb(35, 100, 72) 65%,
+    rgb(35, 100, 72) 100%
+  );
+}
+#game-board {
+  box-sizing: border-box;
+  background-color: rgba(57, 122, 96, 0.8);
+  border: 0.3vmin solid black;
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+}
+.snake {
+  background-color: green;
+  border: 0.25vmin solid rgb(3, 56, 3);
+  border-radius: 50%;
+}
+.food {
+  justify-self: center;
+  align-self: center;
+  background-color: gold;
+  border: 0.25vmin solid black;
+  border-radius: 50%;
+  width: 2vmin;
+  height: 2vmin;
+}
+
+.score {
+  position: absolute;
+  top: 0%;
+  left: 1%;
+  color: black;
+  font-size: 10vmin;
+  text-shadow: 1px -1px rgba(255, 255, 255, 0.5),
+    -1px 1px rgba(255, 255, 255, 0.5);
+}
+#turn-left,
+#turn-right {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 15vmin;
+  width: 15vmin;
+  background-color: rgb(100, 238, 144);
+  border: 0.5vmin solid black;
+  border-radius: 50%;
+  top: 50%;
+}
+#turn-left {
+  left: 0%;
+}
+#turn-right {
+  right: 0%;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 1vmin 1vmin 0;
+  display: inline-block;
+  padding: 1vmin;
+  z-index: 50;
+}
+#turn-left .arrow {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+#turn-right .arrow {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 1050px) and (orientation: landscape) {
+  /* LANDSCAPRE */
+  #turn-left,
+  #turn-right {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 775px) and (orientation: portrait) {
+  /* Portrait */
+  #turn-left,
+  #turn-right {
+    display: flex;
+    top: 90%;
+  }
+}

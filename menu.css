@@ -1,0 +1,185 @@
+/* Color Palette */
+
+/* Medium spring green  rgb(100, 238, 144)*/
+/* Amazon  rgb(57, 122, 96)*/
+/* Bright Bottle Green  rgb(10 , 111, 84)*/
+/* Bottle Green  rgb(35, 100, 72)*/
+
+/* Russian Violet  rgb(13, 6, 48)*/
+/* Prussian Blue  rgb(24, 49, 79)*/
+/* Y in Mn Blue  rgb(56, 78, 119)*/
+
+/* Font Families */
+
+/* 
+font-family: 'Comfortaa', cursive;
+font-family: 'Hanalei Fill', cursive; 
+*/
+
+body {
+  font-family: "Comfortaa", cursive;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: linear-gradient(
+    55deg,
+    rgb(35, 100, 72) 0%,
+    rgb(35, 100, 72) 35%,
+    rgb(13, 6, 48) 50%,
+    rgb(35, 100, 72) 65%,
+    rgb(35, 100, 72) 100%
+  );
+  cursor: default;
+}
+h1 {
+  font-family: "Hanalei Fill", cursive;
+  font-size: 10vmin;
+  text-shadow: 1px -1px rgba(255, 255, 255, 0.5),
+    -1px 1px rgba(255, 255, 255, 0.5);
+  color: black;
+}
+h2 {
+  font-family: "Hanalei Fill", cursive;
+  color: black;
+  font-size: 5vmin;
+  text-shadow: 1px -1px rgba(255, 255, 255, 0.5),
+    -1px 1px rgba(255, 255, 255, 0.5);
+}
+#menu_window {
+  background-color: rgba(255, 255, 255, 0);
+  width: 100vmin;
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu_border {
+  width: 80vmin;
+  height: 80vmin;
+  background-color: rgba(10, 111, 84, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3vmin double rgba(57, 122, 96, 0.8);
+  border-radius: 10%;
+}
+.button {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(100, 238, 144);
+  border: 2px solid black;
+  height: 3.5vmin;
+  width: 12vmin;
+  margin-bottom: 2vmin;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2vmin;
+  color: black;
+  transition: opacity 0.2s;
+}
+#mode {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 3vmin;
+  width: 10vmin;
+  margin-bottom: 2vmin;
+  background-color: rgb(56, 78, 119);
+  font-size: 2vmin;
+  color: white;
+  cursor: default;
+}
+.button:hover {
+  opacity: 0.6;
+}
+.popup_window {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 111, 84, 0.7);
+  border-radius: 10%;
+  width: 90vmin;
+  height: 90vmin;
+}
+.popup_window button {
+  margin: 0 5vmin;
+  width: 12vmin;
+  height: 3vmin;
+  border-radius: 5%;
+  border: 2px solid black;
+  font-size: 2vmin;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.popup_window button:hover {
+  opacity: 0.6;
+}
+.popup_window button:active {
+  border-color: white;
+}
+.popup_window #accept {
+  margin-top: 10vmin;
+}
+#easy_btn {
+  background-color: rgb(56, 78, 119);
+  color: white;
+}
+#med_btn {
+  background-color: rgb(24, 49, 79);
+  color: white;
+}
+#hard_btn {
+  background-color: rgb(13, 6, 48);
+  color: white;
+}
+#accept {
+  background-color: rgb(100, 238, 144);
+}
+
+@media only screen and (max-width: 1050px) and (orientation: landscape) {
+  h1 {
+    font-size: 15vmin;
+  }
+  .popup_window button {
+    width: 15vmin;
+    height: 5vmin;
+    font-size: 3vmin;
+  }
+  .button {
+    width: 15vmin;
+    height: 5vmin;
+    font-size: 3vmin;
+  }
+  #mode {
+    height: 3.5vmin;
+  }
+}
+@media only screen and (max-width: 775px) and (orientation: portrait) {
+  h1 {
+    font-size: 15vmin;
+  }
+  .popup_window button {
+    width: 15vmin;
+    height: 5vmin;
+    font-size: 3vmin;
+  }
+  .button {
+    width: 15vmin;
+    height: 5vmin;
+    font-size: 3vmin;
+  }
+  #mode {
+    height: 3.5vmin;
+  }
+}
