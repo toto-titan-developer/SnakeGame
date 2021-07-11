@@ -16,10 +16,10 @@ function main(currenTime){
     if(gameOver) {
         if (window.localStorage.getItem('H-scr') < getScore()){
             window.localStorage.setItem('H-scr', getScore().toString())
-            window.location = 'https://toto-titan-developer.github.io';
+            window.location = './index.html';
         }
 
-        window.location = 'https://toto-titan-developer.github.io';
+        window.location = './index.html';
     }
 
 
