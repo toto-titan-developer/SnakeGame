@@ -1,7 +1,7 @@
 import { getInputDirection } from "./input.js";
 
 export const SNAKE_SPEED = window.localStorage.getItem('spd'); // FRAMRATE
-const snakeBody = [{x: 11, y: 11}]
+const snakeBody = [{x: 21, y: 21}]
 let newSegments = 0;
 
 export function update() {

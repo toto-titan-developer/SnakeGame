@@ -36,7 +36,6 @@ let directionIndex;
 // let test = {x: 0, y: 0};
 
 document.getElementById('turn-left').addEventListener('click', e => {
-    console.log('left');
     DIRECTIONS.forEach((dir, index) => {
         if(lastInputDirection.x === 0 && lastInputDirection.y === 0){
             inputDirection = DIRECTIONS[3];
@@ -49,14 +48,12 @@ document.getElementById('turn-left').addEventListener('click', e => {
             else {
                 inputDirection = DIRECTIONS[directionIndex - 1];
             }
-            console.log(inputDirection);
             return
         }
     })
 })
 
 document.getElementById('turn-right').addEventListener('click', e =>{
-    console.log('right');
     DIRECTIONS.forEach((dir, index) => {
         if(lastInputDirection.x === 0 && lastInputDirection.y === 0){
             inputDirection = DIRECTIONS[1];
@@ -69,7 +66,6 @@ document.getElementById('turn-right').addEventListener('click', e =>{
             else {
                 inputDirection = DIRECTIONS[directionIndex + 1];
             }
-            console.log(inputDirection);
             return
         }
     })
