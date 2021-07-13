@@ -58,6 +58,7 @@ h2 {
   align-items: center;
 }
 #menu_border {
+  box-sizing: border-box;
   width: 80vmin;
   height: 80vmin;
   background-color: rgba(10, 111, 84, 0.7);
@@ -102,6 +103,7 @@ h2 {
   opacity: 0.6;
 }
 .popup_window {
+  box-sizing: border-box;
   position: absolute;
   display: none;
   flex-direction: column;
@@ -151,15 +153,24 @@ h2 {
   h1 {
     font-size: 15vmin;
   }
-  .popup_window button {
-    width: 15vmin;
-    height: 5vmin;
-    font-size: 3vmin;
+  #menu_border {
+    height: 100vmin;
+    width: 100vmin;
   }
   .button {
-    width: 15vmin;
-    height: 5vmin;
+    width: 25vmin;
+    height: 10vmin;
     font-size: 3vmin;
+  }
+  .popup_window {
+    width: 100vmin;
+    height: 100vmin;
+  }
+  .popup_window button {
+    width: 20vmin;
+    height: 7vmin;
+    font-size: 3vmin;
+    margin: 0 1vmin;
   }
   #mode {
     height: 3.5vmin;
@@ -169,12 +180,20 @@ h2 {
   h1 {
     font-size: 15vmin;
   }
-  .popup_window button {
+  #menu_border {
+    height: 100vmin;
+    width: 100vmin;
+  }
+  .button {
     width: 15vmin;
     height: 5vmin;
     font-size: 3vmin;
   }
-  .button {
+  .popup_window {
+    width: 100vmin;
+    height: 100vmin;
+  }
+  .popup_window button {
     width: 15vmin;
     height: 5vmin;
     font-size: 3vmin;
