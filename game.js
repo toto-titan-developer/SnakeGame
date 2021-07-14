@@ -9,6 +9,7 @@ let lastRenderTime = 0;
 let gameOver = false;
 const gameBoard = document.getElementById('game-board');
 const scoreUI = document.querySelector('.score');
+const death_SFX = document.getElementById('death_sfx');
 
 
 function main(currenTime){
@@ -16,10 +17,17 @@ function main(currenTime){
     if(gameOver) {
         if (window.localStorage.getItem('H-scr') < getScore()){
             window.localStorage.setItem('H-scr', getScore().toString())
-            window.location = './index.html';
+            death_SFX.play();
+            setTimeout(function(){
+                window.location = './index.html';
+            }, 120)
+            
         }
-
-        window.location = './index.html';
+        death_SFX.play();
+        setTimeout(function(){
+            
+            window.location = './index.html';
+        }, 120)
     }
 
 

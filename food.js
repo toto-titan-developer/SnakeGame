@@ -8,12 +8,14 @@ const storage = window.localStorage;
 
 const EXPANSION_RATE = storage.getItem('inc'); 
 const pointsPerPiece = 5 * storage.getItem('pnt'); 
+const coin_SFX = document.getElementById('coin_sfx');
 
 
 export function update() {
     if (onSnake(food)) {
         expandSnake(EXPANSION_RATE);
         food = getRandomFoodPosition();
+        coin_SFX.play();
         score += pointsPerPiece;
     }
 }

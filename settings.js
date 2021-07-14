@@ -1,3 +1,7 @@
+// Set Volume Default
+document.getElementById('menu_mp3').volume = 0.2;
+
+
 let mode = document.querySelectorAll('#mode');
 const popup = document.querySelector(".popup_window");
 const menuWIndow = document.getElementById('menu_border'); 
