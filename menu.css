@@ -153,14 +153,20 @@ h2 {
   h1 {
     font-size: 15vmin;
   }
+  h2 {
+    font-size: 8vmin;
+    margin: 0;
+  }
   #menu_border {
     height: 100vmin;
     width: 100vmin;
   }
   .button {
+    margin: 3vmin 0;
     width: 25vmin;
     height: 10vmin;
-    font-size: 3vmin;
+    font-size: 3.5vmin;
+    font-weight: 900;
   }
   .popup_window {
     width: 100vmin;
@@ -170,35 +176,52 @@ h2 {
     width: 20vmin;
     height: 7vmin;
     font-size: 3vmin;
-    margin: 0 1vmin;
+    margin: 5vmin 3vmin;
+  }
+  .popup_window #accept {
+    margin-top: 5vmin;
   }
   #mode {
-    height: 3.5vmin;
+    height: 5vmin;
+    width: 15vmin;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 775px) and (orientation: portrait) {
   h1 {
     font-size: 15vmin;
   }
+  h2 {
+    font-size: 8vmin;
+    margin: 0;
+  }
   #menu_border {
     height: 100vmin;
     width: 100vmin;
   }
   .button {
-    width: 15vmin;
-    height: 5vmin;
-    font-size: 3vmin;
+    margin: 3vmin 0;
+    width: 25vmin;
+    height: 10vmin;
+    font-size: 3.5vmin;
+    font-weight: 900;
   }
   .popup_window {
     width: 100vmin;
     height: 100vmin;
   }
   .popup_window button {
-    width: 15vmin;
-    height: 5vmin;
+    width: 20vmin;
+    height: 7vmin;
     font-size: 3vmin;
+    margin: 5vmin 3vmin;
+  }
+  .popup_window #accept {
+    margin-top: 5vmin;
   }
   #mode {
-    height: 3.5vmin;
+    height: 5vmin;
+    width: 15vmin;
+    margin: 0;
   }
 }
